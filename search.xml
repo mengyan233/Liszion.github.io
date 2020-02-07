@@ -4,6 +4,39 @@
     
     <entry>
       <title><![CDATA[网站更新]]></title>
+      <url>/2020/02/07/%E7%BD%91%E7%AB%99%E6%9B%B4%E6%96%B0-2/</url>
+      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="网站更新"><a href="#网站更新" class="headerlink" title="网站更新"></a>网站更新</h1><ul>
+<li><strong>开启valine评论系统</strong></li>
+</ul>
+<h1 id="详细过程"><a href="#详细过程" class="headerlink" title="详细过程"></a>详细过程</h1><p><strong>参考文献</strong></p>
+<ul>
+<li><a href="https://blog.csdn.net/qq_28963397/article/details/82910554" target="_blank" rel="noopener">next添加Valine评论功能</a></li>
+</ul>
+<hr>
+<ul>
+<li><strong>注：</strong> valine评论系统支持Markdown格式文本，不要想着评论一些奇奇怪怪的东西，我是可以管理的/笑</li>
+</ul>
+]]></content>
+      
+        <categories>
+            
+            <category> 学习 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> valine </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[网站更新]]></title>
       <url>/2020/02/06/%E7%BD%91%E7%AB%99%E6%9B%B4%E6%96%B0-1/</url>
       <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="更新内容"><a href="#更新内容" class="headerlink" title="更新内容"></a>更新内容</h1><ul>
 <li><strong>更方便的管理博文</strong></li>
@@ -23,8 +56,12 @@
 <p>因为本博客的主题是ayer并不是next所以在添加动态背景的时候稍作了更改。</p>
 <h2 id="安装并配置hexo-admin插件"><a href="#安装并配置hexo-admin插件" class="headerlink" title="安装并配置hexo-admin插件"></a>安装并配置hexo-admin插件</h2><p>废话不多说直接上正题  </p>
 <p><strong>1. 在hexo目录下开git bash键入以下内容并回车</strong> </p>
-<pre><code>npm install --save hexo-admin</code></pre><p><strong>2. 启动项目</strong></p>
-<pre><code>hexo s</code></pre><p>启动项目前记得构建网页文件<br>然后用浏览器访问localhost:4000/admin  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-admin</span><br></pre></td></tr></table></figure>
+
+<p><strong>2. 启动项目</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p>启动项目前记得构建网页文件<br>然后用浏览器访问localhost:4000/admin  </p>
 <p><strong>3. 配置hexo admin</strong></p>
 <p>为了安全，不能让所有人访问这个地址都能够有administrator的权限，所以要添加用户名与密码，  </p>
 <blockquote>
@@ -36,25 +73,25 @@
 </blockquote>
 <p>然后就可以看到后面加密后的信息，接着复制到项目的核心配置文件_config.yml中，粘贴到最后面。<br>保存之后重新运行hexo就看到了效果  </p>
 <hr>
-<h2 id="添加动态背景"><a href="#添加动态背景" class="headerlink" title="添加动态背景"></a>添加动态背景</h2><p><strong>本博客使用的是点线动态背景 <del>废话你们都看到了</del></strong><br>###操作<br>此处需要改动主题文件，对自己操作不放心的话可以先进行备份，不过方法其实很简单。</p>
+<h2 id="添加动态背景"><a href="#添加动态背景" class="headerlink" title="添加动态背景"></a>添加动态背景</h2><p><strong>本博客使用的是点线动态背景 <del>废话你们都看到了</del></strong></p>
+<h3 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h3><p>此处需要改动主题文件，对自己操作不放心的话可以先进行备份，不过方法其实很简单。  </p>
 <ul>
 <li><strong>1.打开主题文件夹下的layout文件夹下的layout.ejs或layout.swig文件</strong></li>
 <li><strong>2.在body标签之间添加一行代码</strong></li>
 </ul>
-<pre><code>&lt;body&gt;
-                    # body标签是这个样子的
-&lt;/body&gt;</code></pre><p>就是这样一行代码  </p>
-<pre><code>&lt;script type=&quot;text/javascript&quot;
-color=&quot;0,0,255&quot; opacity=&apos;0.7&apos; zIndex=&quot;-2&quot; count=&quot;99&quot; src=&quot;//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js&quot;&gt;&lt;/script&gt;</code></pre><p>###配置项说明   </p>
-<ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">        # body标签是这个样子的</span><br><span class="line">&lt;&#x2F;body&gt;</span><br></pre></td></tr></table></figure>
+
+<p>就是这样一行代码  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot;</span><br><span class="line">color&#x3D;&quot;0,0,255&quot; opacity&#x3D;&#39;0.7&#39; zIndex&#x3D;&quot;-2&quot; count&#x3D;&quot;99&quot; src&#x3D;&quot;&#x2F;&#x2F;cdn.bootcss.com&#x2F;canvas-nest.js&#x2F;1.0.0&#x2F;canvas-nest.min.js&quot;&gt;&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="配置项说明"><a href="#配置项说明" class="headerlink" title="配置项说明"></a>配置项说明</h3><ul>
 <li><code>color</code>：线条颜色，默认为<code>&quot;0,0,0&quot;</code>；三个数字分别代表(R,G,B)  </li>
 <li><code>opacity</code>：线条透明度(0～1)，默认为<code>0.5</code>  </li>
 <li><code>count</code>：线条总数量，默认为<code>150</code></li>
 <li><code>zIndex</code>：背景的z-Index属性，该css属性用于控制所在层的位置，默认为<code>-1</code></li>
 </ul>
 <hr>
-<p>##添加live2d看板娘</p>
-<p><strong>1. 在博客根目录下执行</strong></p>
+<h2 id="添加live2d看板娘"><a href="#添加live2d看板娘" class="headerlink" title="添加live2d看板娘"></a>添加live2d看板娘</h2><p><strong>1. 在博客根目录下执行</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-helper-live2d</span><br></pre></td></tr></table></figure>
 
 <p><strong>2. 下载model文件</strong>  </p>

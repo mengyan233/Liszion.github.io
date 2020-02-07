@@ -95,7 +95,7 @@ var _hmt = _hmt || [];
     
     <div class="article-meta">
       <a href="/2020/02/06/%E7%BD%91%E7%AB%99%E6%9B%B4%E6%96%B0-1/" class="article-date">
-  <time datetime="2020-02-06T10:05:00.000Z" itemprop="datePublished">2020-02-06</time>
+  <time datetime="2020-02-06T15:55:36.000Z" itemprop="datePublished">2020-02-06</time>
 </a>
       
   <div class="article-category">
@@ -122,28 +122,15 @@ var _hmt = _hmt || [];
 <li><strong>添加了live2d看板娘</strong></li>
 <li><strong>添加了网页动态背景</strong>  </li>
 </ul>
-<h1 id="详细过程"><a href="#详细过程" class="headerlink" title="详细过程"></a>详细过程</h1><p>参考文章  </p>
-<ul>
-<li><a href="https://blog.csdn.net/smileyan9/article/details/86666824" target="_blank" rel="noopener">【hexo】安装并配置admin插件</a></li>
-<li><a href="http://shenzekun.cn/hexo%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E5%8A%A8%E6%80%81%E8%83%8C%E6%99%AF.html" target="_blank" rel="noopener">【hexo】next主题如何添加动态背景</a></li>
-<li><a href="https://www.jianshu.com/p/3a6342e16e57" target="_blank" rel="noopener">【hexo】添加看版娘动画</a>  </li>
-<li><a href="https://blog.csdn.net/qq_36759224/article/details/85420403" target="_blank" rel="noopener">【hexo】博客优化之博客美化系列</a>  </li>
-</ul>
-<p>因为本博客的主题是ayer并不是next所以在添加动态背景的时候稍作了更改。</p>
-<h2 id="安装并配置hexo-admin插件"><a href="#安装并配置hexo-admin插件" class="headerlink" title="安装并配置hexo-admin插件"></a>安装并配置hexo-admin插件</h2><p>废话不多说直接上正题  </p>
-<p><strong>1. 在hexo目录下开git bash键入以下内容并回车</strong> </p>
-<pre><code>npm install --save hexo-admin</code></pre><p><strong>2. 启动项目</strong></p>
-<pre><code>hexo s</code></pre><p>启动项目前记得构建网页文件<br>然后用浏览器访问localhost:4000/admin  </p>
-<p><strong>3. 配置admin</strong></p>
-<p>为了安全，不能让所有人访问这个地址都能够有admin的权限，所以要添加用户名与密码，在localhost:4000/admin/网页中点击右上角的settings，然后点击下面的 Setup authentification here 。<br>接着填写好用户名和密码还有secret phrase<br>然后就可以看到后面加密后的信息，接着复制到项目的核心配置文件_config.yml中，粘贴到最后面。<br>保存之后重新运行hexo就看到了效果  </p>
-<h2 id="添加动态背景"><a href="#添加动态背景" class="headerlink" title="添加动态背景"></a>添加动态背景</h2><p><strong>本博客使用的是点线动态背景 <del>废话你们都看到了</del></strong></p>
-
+      
+      <a class="article-more-link" href="/2020/02/06/%E7%BD%91%E7%AB%99%E6%9B%B4%E6%96%B0-1/">阅读更多...</a>
+      
       
       <!-- 打赏 -->
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://mengyan233.top/2020/02/06/%E7%BD%91%E7%AB%99%E6%9B%B4%E6%96%B0-1/" data-id="ck6aky4gp0000z07g6tj90tei"
+      <a data-url="https://mengyan233.top/2020/02/06/%E7%BD%91%E7%AB%99%E6%9B%B4%E6%96%B0-1/" data-id="ck6blljli0004t07g8e9napl5"
         class="article-share-link">分享</a>
         
       
@@ -208,30 +195,20 @@ var _hmt = _hmt || [];
       <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>  不得不说这个搭建的过程真的很艰辛，因为没有了解过任何一点点关于这方面的资料，所有东西都是现学现用。<del>也许是我太菜了吧</del>  </p>
 <p>说回来我登录回了我许久不用的github，让我再次领悟到了国内访问海外的难度\手动扶脸  </p>
 <p><del>(说句实话我也不知道为什么突然想搭建个人博客的</del>  </p>
-<h1 id="搭建过程"><a href="#搭建过程" class="headerlink" title="搭建过程"></a>搭建过程</h1><p>好的，来到喜闻乐见的过程环节<br>我搭建博客时参考了这些文章  </p>
-<p><a href="https://blog.csdn.net/weixin_45355752/article/details/94590804" target="_blank" rel="noopener">如何搭建个人博客（详细图解）</a><br><a href="https://segmentfault.com/a/1190000017986794" target="_blank" rel="noopener">超详细 Hexo+ Github Page搭建技术博客教程</a><br><a href="https://www.jianshu.com/p/da20ddc03cdf" target="_blank" rel="noopener">hexo博客绑定自己的域名</a>  </p>
-<p>教程大多都是千篇一律的，只有一些小细节不同，在细节上遇到问题可以百度来抉择  </p>
-<p>本博客使用的是Hexo + Github Pages的博客  <del>因为学生党没有个人服务器</del> 绑定了阿里云的域名，整体而言没有太大问题，不过也遇到了些小麻烦。我在上面贴有解决方法的链接。想要试一试的朋友也可以按照这篇博客来制作属于你自己的播客。</p>
-<p>最开始看到nmp命令直接懵逼，百度一查是node.js，返回文章仔细看发现要求先安装node.js还有git<br>git和node.js安装好之后在命令行中安装Hexo<br>来到github新建仓库，名称为自己的用户名</p>
-<blockquote>
-<p>最开始我用的是myblog的仓库名，然后打开的时候就bug了。。。差了一下github仓库名必须为github的用户名  </p>
-</blockquote>
-<p>ssh这一步我直接略过了，然后就在命令行中直接部署到了Github上。<br>接下来是绑定域名，我就懒得写了，上面有链接<br>总而言之这个博客可以说是来之不易。。  </p>
-<p>除此之外还学习了markdown语言，因为hexo就是要用这种语言来写博客。。。。。<del>好在markdown不是很难</del> w3cschool上也有markdown的教程  </p>
-<p>好的那么我的第一篇博客就到这里结束啦<br>_ (:τ」∠) _<br><del>码字真累</del>  </p>
-<hr>
-<p>2020.2.5更新<br>最后为了加速国内地址访问我把博客部署到了coding上，速度比github pages快很多。</p>
-
+<h1 id="搭建过程"><a href="#搭建过程" class="headerlink" title="搭建过程"></a>搭建过程</h1>
+      
+      <a class="article-more-link" href="/2020/02/05/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87/">阅读更多...</a>
+      
       
       <!-- 打赏 -->
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://mengyan233.top/2020/02/05/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87/" data-id="ck6aky4gu0001z07g2v5mf1k7"
+      <a data-url="https://mengyan233.top/2020/02/05/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87/" data-id="ck6blljlf0002t07g645xg98s"
         class="article-share-link">分享</a>
         
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%9D%82%E8%B0%88/" rel="tag">杂谈</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li></ul>
 
     </footer>
 
@@ -537,6 +514,6 @@ var _hmt = _hmt || [];
 <script type="text/javascript"
 color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"right","width":190,"height":380},"mobile":{"show":true},"log":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"live2d-widget-model-z16"},"display":{"position":"right","width":190,"height":380},"mobile":{"show":true},"log":false});</script></body>
 
 </html>

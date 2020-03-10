@@ -3,21 +3,80 @@
   
     
     <entry>
-      <title><![CDATA[外嵌测试]]></title>
-      <url>/2020/02/17/%E5%A4%96%E5%B5%8C%E6%B5%8B%E8%AF%95/</url>
-      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><hr>
-<h2 id="副标题"><a href="#副标题" class="headerlink" title="副标题"></a>副标题</h2><hr>
-<h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><hr>
-<iframe id=sbrxp src="//player.bilibili.com/player.html?aid=22501204&cid=37298308&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 640px; height: 520px; max-width: 100% max-hight: 100%;"> </iframe>
+      <title><![CDATA[红石移位显示屏_Alpha_0.0.2]]></title>
+      <url>/2020/03/10/%E7%BA%A2%E7%9F%B3%E7%A7%BB%E4%BD%8D%E6%98%BE%E7%A4%BA%E5%B1%8F_Alpha_0.0.2/</url>
+      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="红石移位显示屏-Alpha-0-0-2"><a href="#红石移位显示屏-Alpha-0-0-2" class="headerlink" title="红石移位显示屏_Alpha_0.0.2"></a>红石移位显示屏_Alpha_0.0.2</h1><hr>
+<ul>
+<li><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a><strong>前言</strong></h3></li>
+</ul>
+<p>其实这个东西我打算是放在计算器上的但是一直<span style="background:#403E3E;">在玩r6</span>没做完。。。所以我打算单独把它放出来<span style="background:#403E3E;">水</span></p>
+<hr>
+<p>首先来放上一张全貌</p>
+<p><img src="https://i.loli.net/2020/03/10/WU7kJmIdgPM5KsY.jpg" alt="显示屏全貌.jpg"></p>
+<a id="more"></a>
 
-<h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1>]]></content>
+<p>再来一张侧后面的样子</p>
+<p><img src="https://i.loli.net/2020/03/10/5YxMoIcznXZa1KV.jpg" alt="显示屏全貌2.jpg"></p>
+<ul>
+<li><code>黄色</code>：字库与显示单元  </li>
+<li><code>蓝色</code>：BCD译码器  </li>
+<li><code>粉色</code>：纯红石双向移位寄存器  </li>
+<li><code>白色</code>：输入和编码器还有移位控制时钟  </li>
+</ul>
+<hr>
+<h2 id="进入喜闻乐见的讲解部分"><a href="#进入喜闻乐见的讲解部分" class="headerlink" title="进入喜闻乐见的讲解部分"></a>进入喜闻乐见的讲解部分</h2><h3 id="屏幕"><a href="#屏幕" class="headerlink" title="屏幕"></a>屏幕</h3><p>首先是屏幕也就是整个显示屏的主体，由于找不到<del>才不是我懒得找</del>现成的<strong>纯红石灯七段数显</strong>的模块或讲解索性自己做了一个。虽然说这玩意的体积巨大还延迟感人，但是我就是不想简化。</p>
+<p><img src="https://i.loli.net/2020/03/10/4in1SowZVqkYRfN.jpg" alt="七段数显单位(远处全加器瞩目).jpg"></p>
+<p>然后显示屏的字库译码器部分用的是古老的方法 原因就是不想简化<br>这种字库就是红石爬楼，做出一个部分之后堆叠，堆叠完就可以根据字库所需情况连接或断开七段数码管的输入了<br>这里利用了萤石的<strong>半透明方块</strong>特性，能单方向向上传递红石信号</p>
+<p><img src="https://i.loli.net/2020/03/10/jvcltnzgPqJTW4u.jpg" alt="字库和译码器.jpg"></p>
+<blockquote>
+<p>这种古老的方法虽然已经被很多人<del>dalao</del>抛弃，但是我还在用它。因为我的红石技术已经停留了很久的时间，而且以前对于很多的东西理解也很差，所以只想着先把东西做出来。</p>
+</blockquote>
+<hr>
+<h3 id="纯红石双向移位寄存器"><a href="#纯红石双向移位寄存器" class="headerlink" title="纯红石双向移位寄存器"></a>纯红石双向移位寄存器</h3><ul>
+<li><strong>这 个 部 分 划 重 点 ！ ！</strong></li>
+</ul>
+<p>在mcbbs啊还是贴吧啊都没有找到合适的双向移位寄存器的讲解<br>因为不是只能移位就是不能双向o(´^｀)o  </p>
+<blockquote>
+<p>这个模块灵感来源于<strong>weixingl888</strong>的线性反馈移位寄存器  </p>
+</blockquote>
+<p>我在原有的<strong>单片D触发器</strong>的基础上添加了双向移位控制最后耗时两天把这个模块给肝出来了</p>
+<p><img src="https://i.loli.net/2020/03/10/qdNjF8rc5Dsafkh.jpg" alt="纯红石双向移位寄存器.jpg"></p>
+<ul>
+<li><code>白色</code>：向右移位开关  </li>
+<li><code>蓝色</code>：向左移位开关  </li>
+<li><code>黑色</code>：移位时钟输入  </li>
+</ul>
+<p><del><span style="background:#403E3E;">当然我做的东西还是一样的垃圾，一样的大体积大延迟导致输入要半年XD</span></del></p>
+<hr>
+<h3 id="输入部分"><a href="#输入部分" class="headerlink" title="输入部分"></a>输入部分</h3><p>这个部分没什么好讲的，嗯(确信)<br>无非也就是<strong>DEC</strong>信号<strong>转BCD</strong>信号<br>然后右上角的<strong>无延迟中继器</strong>是0的输入，也就是直接<strong>将寄存器移四位</strong></p>
+<p>这里要注意的是输入1~9也要<strong>将寄存器移四位腾出位置</strong>给接下来输入的数字  ，所以我在1~9数字输入的部分也连上了移位输入，所以对应的控制就是：</p>
+<blockquote>
+<p><code>1~9</code>：寄存器相对于屏幕左移四位，输入对应数字<br><code>0</code>：寄存器直接向左移四位<br><code>退格</code>：寄存器直接向右移四位  </p>
+</blockquote>
+<p><img src="https://i.loli.net/2020/03/10/tJZC7yYpbedDsB1.jpg" alt="输入部分.jpg"></p>
+<hr>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>真的很艰难。要不是手速够快在短时间内复习回大量的资料要不然就是一轮痛苦的翻资料时间  </p>
+<p>悄悄放上一张已经做好的BCD全加器的截图  </p>
+<p><img src="https://i.loli.net/2020/03/10/gcUIFkMp128ye3v.jpg" alt="BCD全加器.jpg">  </p>
+<p><strong>显示屏完成时间：2020.2.28</strong><br><strong>成文时间：2020.3.10</strong>  </p>
+<hr>
+<p><strong>完</strong></p>
+]]></content>
       
+        <categories>
+            
+            <category> Game </category>
+            
+        </categories>
+        
         
         <tags>
             
-            <tag> html5 </tag>
+            <tag> Minecraft </tag>
             
-            <tag> 测试 </tag>
+            <tag> 红石 </tag>
+            
+            <tag> 显示屏 </tag>
             
         </tags>
         

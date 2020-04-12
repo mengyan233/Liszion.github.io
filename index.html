@@ -78,6 +78,84 @@ var _hmt = _hmt || [];
     
     
     
+    <article id="post-RFID安全研究日志" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/04/11/RFID%E5%AE%89%E5%85%A8%E7%A0%94%E7%A9%B6%E6%97%A5%E5%BF%97/"
+    >RFID安全研究日志</a
+  >
+</h2>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/04/11/RFID%E5%AE%89%E5%85%A8%E7%A0%94%E7%A9%B6%E6%97%A5%E5%BF%97/" class="article-date">
+  <time datetime="2020-04-11T14:42:38.000Z" itemprop="datePublished">2020-04-11</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/technology/">technology</a>
+  </div>
+
+      
+      
+      
+    </div>
+    
+
+    
+
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>在学校的饮水卡热水卡使用之后发现与饭卡不同的是，这些卡并没有联网的线路。于是断定这些卡是离线卡，也就是说金额等用户信息数据存储在卡里面。<br>第一次深入接触IC卡，查阅了大量的资料之后对原理以及处理方法以及有了一定的思路。于是开始自己动手，丰衣足食。  </p>
+<p>在咸鱼上找到一个150的PM3，于是省吃俭用整了一台，发现是PM3 easy的定制版，不过这没有关系。</p>
+<p>通过鄙人的小米5读出实验对象卡片为以下类型<br>  <code>饮水卡</code>：全加密m1卡<br>  <code>热水卡</code>：非全加密m1卡<br>  <code>洗衣卡</code>：非全加密m1卡  </p>
+<p>  然后成功通过PM3拿到了IC卡的秘钥</p>
+<p><img src="http://a4.qpic.cn/psb?/V10SVH764GXVo5/Ro3yz18buoSFDlU0tH8gxSEDdkk78yApTRN4S0s53p4!/b/dL8AAAAAAAAA&ek=1&kp=1&pt=0&bo=BAOdAgQDnQIDEDU!&tl=1&su=032471521&tm=1586613600&sce=0-12-12&rf=2-9" alt="a">  </p>
+<p>然后数据的存储也是一如既往的简单，就不想过多赘述了</p>
+
+      
+      <!-- reward -->
+      
+    </div>
+    
+    
+      <!-- copyright -->
+      
+    <footer class="article-footer">
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/IC%E5%8D%A1/" rel="tag">IC卡</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PM3/" rel="tag">PM3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/RFID/" rel="tag">RFID</a></li></ul>
+
+
+    </footer>
+
+  </div>
+
+  
+
+  
+  
+  
+
+  
+
+</article>
+    
     <article id="post-Redstone-Calculator" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
@@ -634,7 +712,7 @@ var _hmt = _hmt || [];
     </li>
     
     <li class="nav-item">
-      <a class="nav-item-link" href="http://liszion.tk" target="_blank" rel="noopener">About</a>
+      <a class="nav-item-link" href="/about">About</a>
     </li>
     
   </ul>

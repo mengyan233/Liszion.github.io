@@ -3,6 +3,36 @@
   
     
     <entry>
+      <title><![CDATA[RFID安全研究日志]]></title>
+      <url>/2020/04/11/RFID%E5%AE%89%E5%85%A8%E7%A0%94%E7%A9%B6%E6%97%A5%E5%BF%97/</url>
+      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>在学校的饮水卡热水卡使用之后发现与饭卡不同的是，这些卡并没有联网的线路。于是断定这些卡是离线卡，也就是说金额等用户信息数据存储在卡里面。<br>第一次深入接触IC卡，查阅了大量的资料之后对原理以及处理方法以及有了一定的思路。于是开始自己动手，丰衣足食。  </p>
+<p>在咸鱼上找到一个150的PM3，于是省吃俭用整了一台，发现是PM3 easy的定制版，不过这没有关系。</p>
+<p>通过鄙人的小米5读出实验对象卡片为以下类型<br>  <code>饮水卡</code>：全加密m1卡<br>  <code>热水卡</code>：非全加密m1卡<br>  <code>洗衣卡</code>：非全加密m1卡  </p>
+<p>  然后成功通过PM3拿到了IC卡的秘钥</p>
+<p><img src="http://a4.qpic.cn/psb?/V10SVH764GXVo5/Ro3yz18buoSFDlU0tH8gxSEDdkk78yApTRN4S0s53p4!/b/dL8AAAAAAAAA&ek=1&kp=1&pt=0&bo=BAOdAgQDnQIDEDU!&tl=1&su=032471521&tm=1586613600&sce=0-12-12&rf=2-9" alt="a">  </p>
+<p>然后数据的存储也是一如既往的简单，就不想过多赘述了</p>
+]]></content>
+      
+        <categories>
+            
+            <category> technology </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> RFID </tag>
+            
+            <tag> PM3 </tag>
+            
+            <tag> IC卡 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Redstone_Calculator]]></title>
       <url>/2020/03/17/Redstone-Calculator/</url>
       <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="什么？你还不会小学数学？让红石计算器来帮你吧！"><a href="#什么？你还不会小学数学？让红石计算器来帮你吧！" class="headerlink" title="什么？你还不会小学数学？让红石计算器来帮你吧！"></a>什么？你还不会小学数学？让红石计算器来帮你吧！</h3><hr>
@@ -204,9 +234,9 @@
         
         <tags>
             
-            <tag> valine </tag>
-            
             <tag> 技术 </tag>
+            
+            <tag> valine </tag>
             
         </tags>
         
@@ -297,9 +327,9 @@
             
             <tag> 技术 </tag>
             
-            <tag> live2d </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> live2d </tag>
             
         </tags>
         
